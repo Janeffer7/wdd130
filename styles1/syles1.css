@@ -1,0 +1,12 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;  /* Ensures links appear in a row */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px;
+    margin: 0 10px; /* Adds spacing between links */
+}
