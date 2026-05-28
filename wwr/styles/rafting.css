@@ -5,10 +5,16 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY / PAGE LAYOUT */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    background-color: #ffffff;
 }
 
 /* HEADER */
@@ -16,8 +22,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+
+    padding: 15px 20px;
     background-color: #f4f4f4;
+
+    margin-bottom: 20px;
 }
 
 header img {
@@ -41,21 +50,26 @@ nav a {
 /* HERO SECTION */
 .hero {
     position: relative;
+
     min-height: 450px;
+
     padding: 20px;
 
-    /* HERO BACKGROUND IMAGE */
+    border-radius: 12px;
+
     background: url("../images/hero.jpg") no-repeat center center/cover;
+
+    overflow: hidden;
 }
 
 /* CONNECTED TEXT PANEL */
 .hero-text {
     position: absolute;
+
     top: 20px;
     right: 190px;
 
     width: 550px;
-    /* EXPANDED WIDTH */
     height: 170px;
 
     background-color: white;
@@ -77,7 +91,9 @@ nav a {
 .hero-text h1 {
     text-align: left;
     color: black;
+
     margin-bottom: 10px;
+
     font-size: 24px;
 }
 
@@ -90,6 +106,7 @@ nav a {
 /* HAPPY CLIENT CONTAINER */
 .happy-client {
     position: absolute;
+
     top: 20px;
     right: 20px;
 
@@ -110,21 +127,34 @@ nav a {
 .happy-client img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     border-radius: 8px;
+
     display: block;
 }
 
 /* GENERAL SECTIONS */
 section {
-    padding: 20px;
+    padding: 25px 0;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+    margin-bottom: 10px;
+    color: black;
 }
 
 /* FOOTER */
 footer {
     background-color: #f4f4f4;
+
     text-align: center;
+
     padding: 15px;
+
+    margin-top: 20px;
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -132,6 +162,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+
     margin-top: 10px;
 }
 
