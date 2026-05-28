@@ -70,12 +70,12 @@ nav a {
     overflow: hidden;
 }
 
-/* HERO TITLE */
+/* HERO TITLE (RIGHT SIDE) */
 .hero h1 {
     position: absolute;
 
     top: 20px;
-    left: 20px;
+    right: 20px;
 
     width: 650px;
 
@@ -89,12 +89,12 @@ nav a {
     box-shadow: 0 4px 12px var(--shadow-color);
 }
 
-/* HERO ARTICLE */
+/* HERO ARTICLE (RIGHT SIDE UNDER TITLE) */
 .hero article {
     position: absolute;
 
     top: 120px;
-    left: 20px;
+    right: 20px;
 
     width: 650px;
 
