@@ -1,6 +1,4 @@
-/* =========================
-   CSS VARIABLES (REQUIRED)
-========================= */
+/* CSS VARIABLES */
 :root {
     --primary-color: #ffffff;
     --secondary-color: #f4f4f4;
@@ -8,9 +6,7 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-/* =========================
-   UNIVERSAL RESET
-========================= */
+/* UNIVERSAL RESET */
 *,
 *::before,
 *::after {
@@ -19,9 +15,7 @@
     box-sizing: border-box;
 }
 
-/* =========================
-   BODY / PAGE LAYOUT
-========================= */
+/* BODY / PAGE LAYOUT */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -30,13 +24,11 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 
-    color: var(--accent-color);
     background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -53,7 +45,7 @@ header img {
     height: auto;
 }
 
-/* NAVIGATION (REQUIRED LINKS) */
+/* NAVIGATION */
 nav ul {
     list-style: none;
     display: flex;
@@ -66,9 +58,7 @@ nav a {
     font-weight: bold;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO SECTION */
 .hero {
     position: relative;
     min-height: 450px;
@@ -80,42 +70,33 @@ nav a {
     overflow: hidden;
 }
 
-/* HERO IMAGE (REQUIRED IN HTML, NOT STYLED HEAVILY) */
-.hero img {
-    display: none;
-    /* background image used instead */
-}
-
-/* HERO TITLE (h1 MUST BE INSIDE HERO) */
+/* HERO TITLE */
 .hero h1 {
     position: absolute;
 
     top: 20px;
     left: 20px;
 
-    width: 600px;
-
     background-color: var(--primary-color);
+    color: var(--accent-color);
 
-    padding: 15px;
+    padding: 10px 15px;
 
-    border-radius: 10px;
-
-    box-shadow: 0 4px 10px var(--shadow-color);
+    border-radius: 8px;
 
     font-size: 20px;
+
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
-/* =========================
-   HERO ARTICLE (REQUIRED)
-========================= */
+/* HERO ARTICLE */
 .hero article {
     position: absolute;
 
-    top: 120px;
-    right: 20px;
+    top: 90px;
+    left: 20px;
 
-    width: 600px;
+    width: 420px;
     height: 140px;
 
     background-color: var(--primary-color);
@@ -127,9 +108,10 @@ nav a {
     box-shadow: 0 4px 10px var(--shadow-color);
 
     display: block;
+    /* IMPORTANT for float layout */
 }
 
-/* REQUIRED FLOAT RULE */
+/* HERO ARTICLE IMAGE (FLOAT RIGHT - REQUIRED) */
 .hero article img {
     float: right;
 
@@ -145,24 +127,23 @@ nav a {
 
 /* ARTICLE TEXT */
 .hero article p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.4;
+
     color: var(--accent-color);
 }
 
-/* =========================
-   SECTIONS (HISTORY ETC.)
-========================= */
+/* SECTIONS */
 section {
     padding: 25px 0;
 }
 
+/* SECTION HEADINGS */
 section h2 {
     margin-bottom: 10px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
     background-color: var(--secondary-color);
 
@@ -173,7 +154,7 @@ footer {
     margin-top: 20px;
 }
 
-/* SOCIAL MEDIA NAV (REQUIRED 3 LINKS) */
+/* SOCIAL MEDIA */
 .socialmedia {
     display: flex;
     justify-content: center;
