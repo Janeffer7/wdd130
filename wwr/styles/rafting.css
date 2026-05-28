@@ -89,7 +89,7 @@ nav a {
     box-shadow: 0 4px 10px var(--shadow-color);
 }
 
-/* HERO ARTICLE (COMPACT CARD) */
+/* HERO ARTICLE */
 .hero article {
     position: absolute;
 
@@ -101,31 +101,32 @@ nav a {
 
     background-color: var(--primary-color);
 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
     padding: 10px;
 
     border-radius: 10px;
 
     box-shadow: 0 4px 10px var(--shadow-color);
+
+    display: block;
+    /* IMPORTANT for float layout */
 }
 
-/* HAPPY CLIENT IMAGE */
+/* HERO ARTICLE IMAGE (FLOAT RIGHT - REQUIRED) */
 .hero article img {
+    float: right;
+
     width: 110px;
     height: 110px;
 
     object-fit: cover;
 
     border-radius: 8px;
+
+    margin-left: 10px;
 }
 
 /* ARTICLE TEXT */
 .hero article p {
-    flex: 1;
-
     font-size: 13px;
     line-height: 1.4;
 
