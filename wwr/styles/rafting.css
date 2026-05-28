@@ -25,7 +25,7 @@ header img {
     height: auto;
 }
 
-/* NAVIGATION (HORIZONTAL) */
+/* NAVIGATION */
 nav ul {
     list-style: none;
     display: flex;
@@ -45,36 +45,48 @@ nav a {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 20px;
     padding: 20px;
 
     /* HERO BACKGROUND IMAGE */
     background: url("../images/hero.jpg") no-repeat center center/cover;
 }
 
-/* LEFT HERO TEXT */
+/* HERO TEXT CARD */
 .hero-text {
     width: 60%;
-    padding: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* HERO HEADING */
 .hero-text h1 {
     text-align: left;
     color: black;
     margin-bottom: 10px;
 }
 
-/* HAPPY CLIENT BOX (TOP RIGHT) */
+/* HERO PARAGRAPH */
+.hero-text p {
+    color: black;
+    font-size: 16px;
+}
+
+/* HAPPY CLIENT CONTAINER */
 .happy-client {
     position: absolute;
     top: 20px;
     right: 20px;
     width: 180px;
-    background: white;
+    background-color: white;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* HAPPY CLIENT IMAGE */
 .happy-client img {
     width: 100%;
     height: auto;
@@ -82,7 +94,7 @@ nav a {
     display: block;
 }
 
-/* SECTIONS */
+/* GENERAL SECTIONS */
 section {
     padding: 20px;
 }
@@ -94,7 +106,7 @@ footer {
     padding: 15px;
 }
 
-/* SOCIAL MEDIA (HORIZONTAL ICONS) */
+/* SOCIAL MEDIA ICONS */
 .socialmedia {
     display: flex;
     justify-content: center;
