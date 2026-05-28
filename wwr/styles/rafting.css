@@ -42,22 +42,34 @@ nav a {
 .hero {
     position: relative;
     min-height: 450px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
     padding: 20px;
 
     /* HERO BACKGROUND IMAGE */
     background: url("../images/hero.jpg") no-repeat center center/cover;
 }
 
-/* HERO TEXT CARD */
+/* CONNECTED TEXT PANEL */
 .hero-text {
-    width: 60%;
-    padding: 15px;
+    position: absolute;
+    top: 20px;
+    right: 190px;
+
+    width: 420px;
+    height: 170px;
+    /* SAME HEIGHT AS IMAGE CONTAINER */
+
     background-color: white;
-    border-radius: 10px;
+    color: black;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -66,12 +78,13 @@ nav a {
     text-align: left;
     color: black;
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 /* HERO PARAGRAPH */
 .hero-text p {
     color: black;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* HAPPY CLIENT CONTAINER */
@@ -79,17 +92,25 @@ nav a {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 180px;
+
+    width: 170px;
+    height: 170px;
+
     background-color: white;
+
     padding: 8px;
-    border-radius: 10px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* HAPPY CLIENT IMAGE */
 .happy-client img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
 }
