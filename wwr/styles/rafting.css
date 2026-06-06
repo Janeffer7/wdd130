@@ -1,4 +1,6 @@
-/* CSS VARIABLES */
+/* =========================
+   CSS VARIABLES
+========================= */
 :root {
     --primary-color: #ffffff;
     --secondary-color: #f4f4f4;
@@ -6,7 +8,9 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-/* RESET */
+/* =========================
+   RESET
+========================= */
 *,
 *::before,
 *::after {
@@ -15,7 +19,9 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -28,7 +34,9 @@ body {
     color: var(--accent-color);
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
     display: flex;
     align-items: center;
@@ -44,7 +52,9 @@ header img {
     height: auto;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 nav ul {
     list-style: none;
     display: flex;
@@ -57,7 +67,9 @@ nav a {
     font-weight: bold;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
     position: relative;
     overflow: hidden;
@@ -72,6 +84,7 @@ nav a {
     position: absolute;
     top: 20px;
     left: 20px;
+
     background: rgba(255, 255, 255, 0.9);
     padding: 10px 15px;
     border-radius: 8px;
@@ -81,6 +94,7 @@ nav a {
     position: absolute;
     top: 110px;
     left: 20px;
+
     width: 450px;
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
@@ -94,12 +108,16 @@ nav a {
     border-radius: 8px;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 section {
     padding: 30px 0;
 }
 
-/* CENTER ALL SECTION HEADINGS (EXCEPT FOOTER) */
+/* =========================
+   SECTION HEADINGS
+========================= */
 section h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -113,10 +131,15 @@ section h2 {
     width: 100%;
 }
 
-/* HEADING ABOVE IMAGES */
-.adventure-title {
-    text-align: center;
+/* WRAPPER ENSURES TRUE CENTER ALIGNMENT */
+.adventure-wrapper {
     width: 100%;
+}
+
+/* HEADING FIX (TRUE CENTER ABOVE IMAGES) */
+.adventure-title {
+    width: 100%;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -129,7 +152,7 @@ section h2 {
     flex-wrap: nowrap;
 }
 
-/* EACH ITEM */
+/* EACH CARD */
 .adventures figure {
     flex: 1;
     margin: 0;
@@ -147,7 +170,9 @@ section h2 {
     margin: 0 auto;
 }
 
-/* HISTORY */
+/* =========================
+   HISTORY
+========================= */
 .history-content {
     display: flex;
     align-items: center;
@@ -165,7 +190,7 @@ section h2 {
 }
 
 /* =========================
-   FOOTER (FIXED PROPERLY)
+   FOOTER (FIXED CORRECTLY)
 ========================= */
 
 footer {
@@ -176,16 +201,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
     text-align: center;
 }
 
-/* FOOTER TEXT CENTER */
+/* FOOTER TEXT CENTER ONLY */
 footer p {
     margin: 0;
 }
 
-/* SOCIAL MEDIA ICONS RIGHT */
+/* SOCIAL ICONS RIGHT SIDE ONLY */
 .socialmedia {
     position: absolute;
     right: 20px;
