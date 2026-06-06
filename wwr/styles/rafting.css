@@ -1,6 +1,4 @@
-/* =========================
-   CSS VARIABLES
-========================= */
+/* CSS VARIABLES */
 :root {
     --primary-color: #ffffff;
     --secondary-color: #f4f4f4;
@@ -8,9 +6,7 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-/* =========================
-   RESET
-========================= */
+/* UNIVERSAL RESET */
 *,
 *::before,
 *::after {
@@ -19,9 +15,7 @@
     box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
+/* BODY / PAGE LAYOUT */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -34,9 +28,7 @@ body {
     color: var(--accent-color);
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -44,6 +36,7 @@ header {
 
     padding: 15px 20px;
     background-color: var(--secondary-color);
+
     margin-bottom: 20px;
 }
 
@@ -52,9 +45,7 @@ header img {
     height: auto;
 }
 
-/* =========================
-   NAV
-========================= */
+/* NAVIGATION */
 nav ul {
     list-style: none;
     display: flex;
@@ -67,17 +58,16 @@ nav a {
     font-weight: bold;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO SECTION */
 .hero {
     position: relative;
     overflow: hidden;
 }
 
 .hero > img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -85,9 +75,14 @@ nav a {
     top: 20px;
     left: 20px;
 
-    background: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--accent-color);
+
     padding: 10px 15px;
     border-radius: 8px;
+
+    font-size: 22px;
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
 .hero article {
@@ -96,83 +91,40 @@ nav a {
     left: 20px;
 
     width: 450px;
-    background: rgba(255, 255, 255, 0.9);
+
+    background-color: rgba(255, 255, 255, 0.9);
+
     padding: 15px;
     border-radius: 10px;
+
+    box-shadow: 0 4px 10px var(--shadow-color);
+
     display: flex;
     gap: 15px;
+    align-items: flex-start;
 }
 
 .hero article img {
     width: 120px;
+    height: auto;
     border-radius: 8px;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+.hero article p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* SECTIONS */
 section {
     padding: 30px 0;
 }
 
-/* =========================
-   SECTION HEADINGS
-========================= */
 section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* =========================
-   ADVENTURE SECTION (FIXED PROPERLY)
-========================= */
-
-.adventure-section {
-    width: 100%;
-}
-
-/* WRAPPER ENSURES TRUE CENTER ALIGNMENT */
-.adventure-wrapper {
-    width: 100%;
-}
-
-/* HEADING FIX (TRUE CENTER ABOVE IMAGES) */
-.adventure-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* IMAGE ROW */
-.adventures {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 15px;
-    flex-wrap: nowrap;
-}
-
-/* EACH CARD */
-.adventures figure {
-    flex: 1;
-    margin: 0;
-    text-align: center;
-}
-
-/* UNIFORM IMAGES */
-.adventures img {
-    width: 100%;
-    max-width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* =========================
-   HISTORY
-========================= */
+/* HISTORY SECTION */
 .history-content {
     display: flex;
     align-items: center;
@@ -186,37 +138,52 @@ section h2 {
 
 .history-content img {
     width: 250px;
+    height: auto;
     border-radius: 8px;
 }
 
-/* =========================
-   FOOTER (FIXED CORRECTLY)
-========================= */
-
-footer {
-    background-color: var(--secondary-color);
-    padding: 15px;
-    margin-top: 20px;
-
+/* ADVENTURES SECTION */
+.adventures {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
 
-    position: relative;
+.adventures figure {
+    flex: 1;
     text-align: center;
 }
 
-/* FOOTER TEXT CENTER ONLY */
-footer p {
-    margin: 0;
+.adventures img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
-/* SOCIAL ICONS RIGHT SIDE ONLY */
+/* FOOTER */
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* SOCIAL MEDIA */
 .socialmedia {
-    position: absolute;
-    right: 20px;
     display: flex;
+    justify-content: center;
     gap: 15px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
