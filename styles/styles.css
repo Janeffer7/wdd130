@@ -64,14 +64,12 @@ nav a {
     overflow: hidden;
 }
 
-/* HERO IMAGE */
 .hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* HERO TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -87,7 +85,6 @@ nav a {
     box-shadow: 0 4px 10px var(--shadow-color);
 }
 
-/* HERO ARTICLE */
 .hero article {
     position: absolute;
     top: 110px;
@@ -107,14 +104,12 @@ nav a {
     align-items: flex-start;
 }
 
-/* HERO ARTICLE IMAGE */
 .hero article img {
     width: 120px;
     height: auto;
     border-radius: 8px;
 }
 
-/* ARTICLE TEXT */
 .hero article p {
     font-size: 14px;
     line-height: 1.5;
@@ -125,15 +120,11 @@ section {
     padding: 30px 0;
 }
 
-/* SECTION HEADINGS */
 section h2 {
     margin-bottom: 15px;
 }
 
-/* =========================
-   HISTORY SECTION FIX
-========================= */
-
+/* HISTORY SECTION FIX */
 .history-content {
     display: flex;
     align-items: center;
@@ -152,25 +143,30 @@ section h2 {
 }
 
 /* =========================
-   ADVENTURES SECTION FIX
+   ADVENTURES SECTION FIX (UPDATED)
 ========================= */
 
 .adventures {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .adventures figure {
-    width: 180px;
+    flex: 1;
     text-align: center;
 }
 
 .adventures img {
     width: 100%;
+    max-width: 180px;
     height: auto;
     border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* FOOTER */
