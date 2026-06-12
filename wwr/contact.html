@@ -1,82 +1,133 @@
-<main>
+<!DOCTYPE html>
+<html lang="en-US">
 
-    <!-- Company Info -->
-    <section>
-        <h2>Contact Information</h2>
-        <p>Address: 123 River Road, Nairobi, Kenya</p>
-        <p>Phone: +254 700 000 000</p>
-        <p>Email: info@whitewaterrafting.com</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Google Map -->
-        <iframe src="YOUR_GOOGLE_MAP_EMBED_LINK_HERE"></iframe>
-    </section>
+    <meta name="description"
+      content="Contact our white water rafting team for reservations, inquiries, or feedback. Find our address, phone number, email, and employee contacts.">
 
-    <!-- Employee Profiles -->
-    <section>
-        <h2>Our Team</h2>
+    <meta name="author" content="Janeffer Nzuki">
 
-        <figure>
-            <img src="employee1.jpg" alt="Guide John Mwangi">
-            <figcaption>John Mwangi - Senior Rafting Guide</figcaption>
-        </figure>
+    <title>Contact Us | White Water Rafting</title>
 
-        <figure>
-            <img src="employee2.jpg" alt="Safety Officer Jane Doe">
-            <figcaption>Jane Doe - Safety Officer</figcaption>
-        </figure>
+    <link rel="stylesheet" href="rafting.css">
+</head>
 
-        <figure>
-            <img src="employee3.jpg" alt="Customer Service Peter Kimani">
-            <figcaption>Peter Kimani - Customer Service Manager</figcaption>
-        </figure>
-    </section>
+<body>
 
-    <!-- Contact Form -->
-    <section>
-        <h2>Send Us a Message</h2>
+    <!-- HEADER (same as other pages) -->
+    <header>
+        <h1>White Water Rafting</h1>
+    </header>
 
-        <form>
+    <!-- NAVIGATION (same as other pages) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-            <!-- Name -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+    <!-- MAIN CONTENT -->
+    <main>
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <!-- CONTACT INFO -->
+        <section>
+            <h2>Contact Information</h2>
 
-            <!-- Purpose (Radio Buttons) -->
-            <p>Purpose of Message:</p>
+            <p><strong>Address:</strong> 123 River Road, Nairobi, Kenya</p>
+            <p><strong>Phone:</strong> +254 700 000 000</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-            <label>
-                <input type="radio" name="purpose" value="general">
-                General Inquiry
-            </label>
+            <!-- MAP WRAPPER -->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31908.192078781616!2d37.4355676!3d-1.4594595000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1781266937541!5m2!1sen!2ske"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>">
+                </iframe>
+            </div>
+        </section>
 
-            <label>
-                <input type="radio" name="purpose" value="reservation">
-                Reservation Question
-            </label>
+        <!-- EMPLOYEE PROFILES -->
+        <section>
+            <h2>Our Team</h2>
 
-            <label>
-                <input type="radio" name="purpose" value="suggestion">
-                Website Suggestion
-            </label>
+            <figure>
+                <img src="images/employee1.jpg" alt="John Mwangi - Senior Guide">
+                <figcaption>John Mwangi - Senior Rafting Guide</figcaption>
+            </figure>
 
-            <!-- Message -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <figure>
+                <img src="images/employee2.jpg" alt="Jane Wambui - Safety Officer">
+                <figcaption>Jane Wambui - Safety Officer</figcaption>
+            </figure>
 
-            <!-- Newsletter -->
-            <label>
-                <input type="checkbox" name="newsletter">
-                Please subscribe me to the monthly newsletter
-            </label>
+            <figure>
+                <img src="images/employee3.jpg" alt="Peter Kimani - Customer Service Manager">
+                <figcaption>Peter Kimani - Customer Service Manager</figcaption>
+            </figure>
+        </section>
 
-            <!-- Submit Button -->
-            <button type="submit">Send Message</button>
+        <!-- CONTACT FORM -->
+        <section>
+            <h2>Send Us a Message</h2>
 
-        </form>
-    </section>
+            <form>
 
-</main>
+                <!-- NAME -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- EMAIL -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- PURPOSE -->
+                <p>Purpose of Message:</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general">
+                    General Inquiry
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- MESSAGE -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <!-- NEWSLETTER -->
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (same as other pages) -->
+    <footer>
+        <p>&copy; 2026 White Water Rafting. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
