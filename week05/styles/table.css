@@ -1,0 +1,36 @@
+table {
+    width: 70%;
+    /* makes table smaller */
+    margin: 20px auto;
+    /* centers the table */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* smaller text */
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 6px;
+    /* reduces cell size */
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
