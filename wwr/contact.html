@@ -1,145 +1,82 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<main>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Company Info -->
+    <section>
+        <h2>Contact Information</h2>
+        <p>Address: 123 River Road, Nairobi, Kenya</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Email: info@whitewaterrafting.com</p>
 
-    <meta name="description"
-      content="Experience thrilling and safe whitewater rafting adventures with expert guides, quality equipment, and unforgettable river journeys.">
+        <!-- Google Map -->
+        <iframe src="YOUR_GOOGLE_MAP_EMBED_LINK_HERE"></iframe>
+    </section>
 
-    <meta name="author" content="Janeffer Nzuki">
+    <!-- Employee Profiles -->
+    <section>
+        <h2>Our Team</h2>
 
-    <title>About Us | White Water Rafting</title>
+        <figure>
+            <img src="employee1.jpg" alt="Guide John Mwangi">
+            <figcaption>John Mwangi - Senior Rafting Guide</figcaption>
+        </figure>
 
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+        <figure>
+            <img src="employee2.jpg" alt="Safety Officer Jane Doe">
+            <figcaption>Jane Doe - Safety Officer</figcaption>
+        </figure>
 
-<body>
+        <figure>
+            <img src="employee3.jpg" alt="Customer Service Peter Kimani">
+            <figcaption>Peter Kimani - Customer Service Manager</figcaption>
+        </figure>
+    </section>
 
-    <!-- HEADER -->
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Logo">
+    <!-- Contact Form -->
+    <section>
+        <h2>Send Us a Message</h2>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <form>
 
-    <!-- MAIN -->
-    <main>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
 
-        <!-- HERO SECTION -->
-        <div class="hero">
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
 
-            <img src="images/hero.jpg" alt="White Water Rafting Adventure">
+            <!-- Purpose (Radio Buttons) -->
+            <p>Purpose of Message:</p>
 
-            <h1>About Us - White Water Rafting Expedition!!</h1>
+            <label>
+                <input type="radio" name="purpose" value="general">
+                General Inquiry
+            </label>
 
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client">
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
 
-                <p>
-                    Whitewater rafting is an exciting outdoor adventure that involves navigating
-                    rivers using non-motorized watercraft. Our company provides safe and thrilling
-                    rafting experiences with professional guides, quality equipment, and
-                    unforgettable memories.
-                </p>
-            </article>
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
 
-        </div>
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
 
-        <!-- HISTORY SECTION -->
-        <section class="history">
+            <!-- Newsletter -->
+            <label>
+                <input type="checkbox" name="newsletter">
+                Please subscribe me to the monthly newsletter
+            </label>
 
-            <h2>History</h2>
+            <!-- Submit Button -->
+            <button type="submit">Send Message</button>
 
-            <div class="history-content">
+        </form>
+    </section>
 
-                <p>
-                    White Water Rafting was founded in 1995 by adventure enthusiasts who wanted to
-                    share the excitement of river exploration and outdoor adventure with people from
-                    all walks of life.
-                </p>
-
-                <img src="images/history.jpg" alt="Rafting History">
-
-                <p>
-                    Over the years, we have grown into a trusted rafting company known for safety,
-                    exceptional customer experiences, and unforgettable journeys through some of the
-                    most beautiful river landscapes.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- ADVENTURE SECTION -->
-        <section class="adventure-section">
-
-            <h2 class="adventure-title">Adventure Awaits You!</h2>
-
-            <div class="adventures">
-
-                <figure>
-                    <img src="images/day-adventure.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/new-adventure.jpg" alt="New Adventure Experience">
-                    <figcaption>Sunset River Escape</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/sunset-escape.jpg" alt="Sunset Escape Adventure">
-                    <figcaption>Thunder Canyon Run</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/river-expedition.jpg" alt="River Expedition Adventure">
-                    <figcaption>Wild River Expedition</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/water-quest.jpg" alt="Water Quest Adventure">
-                    <figcaption>Extreme Whitewater Quest</figcaption>
-                </figure>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>&copy; 2026 White Water Rafting | Janeffer Nzuki</p>
-
-        <nav class="socialmedia">
-
-            <a href="https://facebook.com">
-                <img src="images/facebook.jpg" alt="Facebook">
-            </a>
-
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.jpg" alt="LinkedIn">
-            </a>
-
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram">
-            </a>
-
-        </nav>
-
-    </footer>
-
-</body>
-
-</html>
+</main>
