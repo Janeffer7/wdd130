@@ -1,4 +1,7 @@
-header {
+/* =========================
+   HEADER
+========================= */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,10 +14,13 @@ header img {
     height: auto;
 }
 
+/* NAVIGATION */
 nav ul {
     display: flex;
     list-style: none;
     gap: 0;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -29,34 +35,9 @@ nav a {
     background-color: #fff;
 }
 
-.employee-profiles img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-.employee-container {
-    display: flex;
-    justify-content: center;
-}
-
-.employee-profiles {
-    display: flex;
-    gap: 20px;
-}
-
-.employee-profiles figure {
-    text-align: center;
-}
-
-.employee-profiles img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+/* =========================
+   EMPLOYEES (FIXED + CLEAN)
+========================= */
 
 .employee-profiles {
     display: flex;
@@ -80,10 +61,14 @@ nav a {
     height: 140px;
     object-fit: cover;
     border-radius: 0;
-    /* square image */
+    /* square images */
     display: block;
     margin: 0 auto;
 }
+
+/* =========================
+   CONTACT INFO
+========================= */
 
 .contact-info {
     text-align: center;
@@ -94,6 +79,10 @@ nav a {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+
+/* =========================
+   CONTACT LAYOUT
+========================= */
 
 .contact-layout {
     display: grid;
@@ -107,6 +96,10 @@ nav a {
     height: 350px;
     border: none;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: #d7c9f2;
