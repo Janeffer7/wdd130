@@ -58,6 +58,33 @@ nav a {
     border-radius: 50%;
 }
 
+.employee-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.employee-profiles figure {
+    width: 160px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.employee-profiles img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0;
+    /* square image */
+    display: block;
+    margin: 0 auto;
+}
+
 .contact-info {
     text-align: center;
     margin-bottom: 2rem;
