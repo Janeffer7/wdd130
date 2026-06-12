@@ -1,67 +1,108 @@
-/* HEADER CONTAINER */
-.site-header {
-    width: 100%;
-    background: transparent;
-    /* no blue, no change to your theme */
-}
-
-/* Layout */
-.header-container {
+header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    background-color: #d7c9f2;
+    padding: 20px;
 }
 
-/* Logo left */
-.logo img {
-    height: 60px;
+header img {
+    width: 100px;
+    height: auto;
 }
 
-/* Center nav container */
-.nav-wrapper {
-    flex: 1;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+nav li {
+    border: 1px solid #666;
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.employee-profiles img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.employee-container {
     display: flex;
     justify-content: center;
 }
 
-/* Nav table styling */
-.nav-table {
-    border-collapse: collapse;
-}
-
-.nav-table td {
-    padding: 0 15px;
-}
-
-.nav-table a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-}
-
-/* Social icons right */
-.social-icons {
+.employee-profiles {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+}
+
+.employee-profiles figure {
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+footer {
+    background-color: #d7c9f2;
+    padding: 15px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Resize icons */
-.social-icons img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
+footer p {
+    flex: 1;
+    text-align: center;
 }
 
-/* Mobile fix */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
 
-    .nav-wrapper {
-        justify-content: center;
-    }
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
