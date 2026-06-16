@@ -205,6 +205,14 @@ footer p {
     object-fit: contain;
 }
 
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --primary-color: #333;
+    --secondary-color: #ffffff;
+    --accent-color: #d7c9f2;
+    --text-color: #333;
+}
+
 /* ================= RESET ================= */
 * {
     margin: 0;
@@ -212,10 +220,45 @@ footer p {
     box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+}
+
+/* ================= HEADER ================= */
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* NAVIGATION (HORIZONTAL BOXES) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+}
+
+nav li {
+    border: 1px solid #000;
+}
+
+nav a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
 }
 
 /* ================= HERO SECTION ================= */
@@ -227,134 +270,107 @@ body {
 }
 
 /* BACKGROUND IMAGE */
-.hero-img {
+.hero > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* CENTER TITLE ON TOP */
-.hero-title {
+/* OVERLAY BOX (SMALL CONTAINER ON TOP OF HERO) */
+.hero article {
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    gap: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 600px;
-}
-
-/* TITLE INSIDE BOX */
-.hero-title {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-/* OVERLAY POSITION */
-.hero-overlay {
-    position: absolute;
-    top: 55%;
-    left: 5%;
+    top: 50%;
+    left: 20px;
     transform: translateY(-50%);
-}
 
-/* FLEX CONTAINER (IMAGE + TEXT SAME HEIGHT) */
-.hero-content {
     display: flex;
     align-items: stretch;
-    width: 600px;
-    height: 180px;
-    /* forces equal height */
-    border-radius: 10px;
+
+    width: 400px;
+    height: 150px;
+
+    padding: 0;
     overflow: hidden;
 }
 
-/* LEFT IMAGE */
-.client-img {
-    width: 140px;
+/* LEFT IMAGE (HAPPY CLIENT) */
+.hero article img {
+    width: 130px;
     height: 100%;
     object-fit: cover;
     display: block;
+    margin: 0;
 }
 
-/* RIGHT TEXT */
-.hero-text {
+/* RIGHT TEXT AREA */
+.hero article p {
     flex: 1;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 15px;
+    margin: 0;
+    padding: 12px;
+
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.4;
+
+    background-color: white;
 }
 
-/* ================= HISTORY SECTION ================= */
-/* HISTORY SECTION */
-.history {
-    padding: 40px 20px;
+/* HERO TITLE */
+.hero h1 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
     text-align: center;
 }
 
-/* 3-COLUMN FLEX LAYOUT */
-.history-container {
+/* ================= HISTORY ================= */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* HISTORY LAYOUT (LEFT TEXT - IMAGE CENTER - RIGHT TEXT) */
+.history-layout {
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* keeps everything vertically aligned */
+    justify-content: center;
     gap: 30px;
 }
 
-/* LEFT + RIGHT TEXT */
+/* TEXT LEFT & RIGHT */
 .history-left,
 .history-right {
     flex: 1;
+    text-align: justify;
     font-size: 14px;
     line-height: 1.6;
 }
 
 /* CENTER IMAGE */
-.history-image {
-    flex: 0 0 auto;
-    /* prevents stretching */
-}
-
-.history-image img {
+.history-layout img {
     width: 250px;
     height: auto;
     border-radius: 10px;
-    display: block;
 }
 
-/* ================= ADVENTURES ================= */
+/* ================= ADVENTURE (HORIZONTAL ROW) ================= */
 .adventures {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
 }
 
-.adventure-section h2 {
+.adventures figure {
     text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 .adventures img {
@@ -362,10 +378,6 @@ body {
     height: 140px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.adventures figure {
-    text-align: center;
 }
 
 /* ================= FOOTER ================= */
